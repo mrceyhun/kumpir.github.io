@@ -7,7 +7,22 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+  <style>
+.container {
+    position: relative;
+    font-family: Arial;
+}
+
+.text-block {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: black;
+    color: red;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+</style>
 </head>
 <body>
   
@@ -17,10 +32,15 @@
       <img src="https://cdn.dribbble.com/users/22930/screenshots/2830824/popcorn.gif" alt="Zekadan başım ağrıyor" class="img-responsive">
     </div>
   <div class="col-md-4" style="padding-left: 0px;  padding-right: 0px;">
-    <form action="home.html">
-        <input type="image" value="ANA SAYFA" src="https://78.media.tumblr.com/42a100bb4aec62c88a7e91f1c1991157/tumblr_oufauna9lT1tbss00o2_400.gif"/>
-        <div class="top-left"><h1>ANA SAYF</h1></div>
-    </form>
+    <div class="container">
+      <form action="home.html">
+        <input class="img-responsive" type="image" value="ANA SAYFA" src="https://78.media.tumblr.com/42a100bb4aec62c88a7e91f1c1991157/tumblr_oufauna9lT1tbss00o2_400.gif"/>
+      </form>
+      <div class="text-block">
+        <h2>ANA SAYFA</h2>
+      </div>
+    </div>
+    
   </div>
 
 </div>
