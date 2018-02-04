@@ -8,19 +8,36 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-        .container {
-            position: absolute;
-            font-family: Arial;
+        .image {
+          opacity: 1;
+          display: block;
+          transition: .5s ease;
+          backface-visibility: hidden;
+        }
+       .middle {
+          transition: .5s ease;
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          text-align: center;
         }
 
-        .text-block {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            background-color: black;
-            color: red;
-            padding-left: 0px;
-            padding-right: 0px;
+        .img-responsive:hover .image {
+          opacity: 0.3;
+        }
+
+        .img-responsive:hover .middle {
+          opacity: 1;
+        }
+
+        .text {
+          background-color: #4CAF50;
+          color: white;
+          font-size: 16px;
+          padding: 16px 32px;
         }
   </style>
 </head>
@@ -32,10 +49,13 @@
       <img src="https://cdn.dribbble.com/users/22930/screenshots/2830824/popcorn.gif" alt="Zekadan başım ağrıyor" class="img-responsive">
     </div>
   <div class="col-md-4" style="padding-left: 0px;  padding-right: 0px;">
-        <span class="tooltiptext">ANA SAYFA</span>
-        <form action="home.html">
+        
+        <form action="home.html" class="image">
           <input class="img-responsive" type="image" value="ANA SAYFA" src="https://78.media.tumblr.com/42a100bb4aec62c88a7e91f1c1991157/tumblr_oufauna9lT1tbss00o2_400.gif"/>
-        </form>
+          <div class="middle">
+            <div class="text">John Doe</div>
+          </div>
+    </form>
   </div>
 
 </div>
